@@ -20,9 +20,19 @@ from hyper.data_analysis import (
     calculate_volatility,
     calculate_win_rate,
 )
+from hyper.trading_bot import (
+    Order,
+    OrderStatus,
+    OrderType,
+    Position,
+    TradingBot,
+    TradeSignal,
+)
 
 __all__ = [
+    # Core
     "greet",
+    # Data Analysis
     "calculate_mean",
     "calculate_median",
     "calculate_std_dev",
@@ -37,4 +47,11 @@ __all__ = [
     "calculate_max_drawdown",
     "calculate_win_rate",
     "calculate_profit_factor",
+    # Trading Bot
+    "Order",
+    "OrderStatus",
+    "OrderType",
+    "Position",
+    "TradingBot",
+    "TradeSignal",
 ]
